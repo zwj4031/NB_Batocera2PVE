@@ -1,0 +1,37 @@
+# Git ignore default
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.exe
+*.dll
+*.obj
+*.o
+dist/
+build/
+cache/
+*.AppImage
+*.tar.gz
+*.deb
+
+pulse_cache/
+Ai_Work/
+release/
+*.7z
+*.zip
+vnc_auto/
+
+# ---- 敏感文件: 禁止提交到 git（内含内网凭据/IP/密码）----
+config.json
+AGENTS.md
+# ---- 归档/遗留/内部工具: 不入 git 也不进发布包 ----
+bak/
+Ai_Work/
+ai_studio_code.py
+tools/_diag_boot_vol.py
+
+# ---- 离线部署缓存: GitHub Actions 完整版打包需要, 强制入库 ----
+!modules/cache/
+!modules/cache/**
+!modules/pulse_cache/
+!modules/pulse_cache/**

@@ -1,0 +1,15 @@
+GLIBC_2.2.5 {
+  global:
+    yp_get_default_domain;
+    yp_bind;
+    yp_unbind;
+    yp_match;
+    yp_first;
+    yp_next;
+    yp_all;
+    yp_order;
+    yp_master;
+    yp_update;
+    yperr_string;
+    ypprot_err;
+};
